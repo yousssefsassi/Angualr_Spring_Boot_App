@@ -1,0 +1,18 @@
+<div class="custom-details-card custom-modal-content">
+    <div class="custom-details-card-header">
+        Status change confirmation
+    </div>
+    <div class="custom-details-card-description-n-details" style="padding-left: 12px;">
+        <div class="custom-details-card-description-container">
+            <div class="custom-details-card-description">
+                Would you like to enable/disable this profile ?
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" (click)="closeModal('not changed')">Back</button>
+        <button type="button" class="btn btn-outline-success btn-sm" (click)="closeModal('enabled')" [routerLink]="['/control-panel/profile/details']">Enable</button>
+        <button type="button" class="btn btn-outline-info btn-sm" (click)="closeModal('disabled')" [routerLink]="['/control-panel/profile/details']">Disable</button>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 720px;">
+    <div class="custom-details-card-header">
+        {{rentalDevice.brand}}
+    </div>
+    <div class="row">
+        <div class="col-sm-5 no-padding-right">
+            <div class="custom-details-card-image">
+                <img src="{{rentalDevice.pictureFilePath}}"  class="img-fluid responsive-image">
+
+            </div>
+        </div>
+        <div class="col-sm-7 no-padding-left">
+            <div class="custom-details-card-description-n-details">
+                <div class="custom-details-card-description-container">
+                    <div  class="custom-details-card-description">
+                      {{rentalDevice.description}}
+
+
+                    </div>
+                </div>
+                <div class="custom-details-card-details">
+                    <div><span class="detail-field-name">serial number:&nbsp;</span>{{rentalDevice.serialNumber}} </div>
+                    <div><span class="detail-field-name">year of manufactor:&nbsp;</span>{{rentalDevice.yearOfManufacture| date:'short'}}</div>
+                    <div><span class="detail-field-name">purchase price:&nbsp;</span>${{rentalDevice.purchasePrice}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/rental-device/list']">Back</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/rental-device/edit']">Edit</button>
+    </div>
+</div>

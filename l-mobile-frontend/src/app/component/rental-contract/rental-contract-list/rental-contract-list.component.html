@@ -1,0 +1,38 @@
+
+<div>
+  <button type="button" class="btn btn-outline-success" [routerLink]="['/control-panel/rental-contract/add']">New rental Contract</button>
+</div>
+
+<div *ngFor="let r of listRental" class="custom-details-card scale-with-shadow-on-hover" style="max-width: 480px;">
+<div class="custom-details-card-header">
+  {{r.reference}}
+
+</div>
+<div class="row">
+    <div class="col-sm-5 no-padding-right">
+        <div class="custom-details-card-image">
+            <img *ngFor="let p of r.rentalDevices" [src]="p.pictureFilePath" class="img-fluid responsive-image">
+        </div>
+    </div>
+    <div class="col-sm-7 no-padding-left">
+        <div class="custom-details-card-description-n-details">
+            <div class="custom-details-card-description-container">
+
+            </div>
+            <div class="custom-details-card-details">
+              <div><span class="detail-field-name">Valid From:&nbsp;</span>{{r.validFrom | date:'short' }}</div>
+              <div><span class="detail-field-name">Vallid To:&nbsp;</span>{{r.validTo | date:'short'}}</div>
+
+                <div><span class="detail-field-name"> price:&nbsp;</span>${{r.price}}</div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="separator">
+<div class="button-group">
+    <button type="button" class="btn btn-outline-success btn-sm" (click)="goToDetail(r.id)">Details</button>
+    <button type="button" class="btn btn-outline-warning btn-sm" (click)="goToEdit(r.id)">Edit</button>
+    <button type="button" class="btn btn-outline-danger btn-sm" (click)="delete(r.id)">Delete</button>
+
+  </div>
+</div>

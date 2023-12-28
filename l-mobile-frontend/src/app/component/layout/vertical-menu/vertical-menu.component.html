@@ -1,0 +1,50 @@
+<div>
+    <div style="margin-top: 60px; padding-left: 20px; padding-bottom: 20px; text-align: left;">
+        <div *ngIf="role=='ROLE_ADMIN'"  style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/profile/list']">
+            <img src="assets/images/icons/vertical_menu/accounts.svg" style="width: 25px; transform: translateX(0px);" alt="accounts">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Accounts
+            </div>
+        </div>
+        <div  style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/dashboard']">
+            <img src="assets/images/icons/vertical_menu/dashboard.svg" style="width: 25px;" alt="dashboard">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Dashboard
+            </div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/rental-device']">
+            <img src="assets/images/icons/vertical_menu/clock.svg" style="width: 25px;" alt="rental devices">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Rental Devices
+            </div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/rental-contract']">
+            <img src="assets/images/icons/vertical_menu/file.svg" style="width: 25px;" alt="rental contracts">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Rental Contracts
+            </div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/tradein-device']">
+            <img src="assets/images/icons/vertical_menu/wrench.svg" style="width: 25px;" alt="used machines">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">Used Machines</div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/tradein-contract']">
+            <img src="assets/images/icons/vertical_menu/change.svg" style="width: 25px;" alt="trade-ins">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Trade-ins
+            </div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/stock']">
+            <img src="assets/images/icons/vertical_menu/stock.svg" style="width: 25px;" alt="stock machines">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Stock Machines
+            </div>
+        </div>
+        <div style="margin-top: 20px; white-space:nowrap; cursor: pointer;" [routerLink]="['/control-panel/sales']">
+            <img src="assets/images/icons/vertical_menu/dollar.svg" style="width: 25px;" alt="sales">
+            <div style="width: max-content; margin: 0px 10px; color: gray; text-decoration: underline; display: inline;">
+                Sales
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 920px;">
+    <div class="custom-details-card-header">
+        Update profile information
+    </div>
+    <div>
+        <form>
+            <div class="row" style="margin: 8px;">
+                <div class="col-sm no-padding-left">
+                    <div class="custom-details-card-image" style="padding: 0; margin-bottom: 16px;">
+                        <img src="assets/images/profile/salesman_01.jpg" class="img-fluid responsive-image">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-2">
+                        <label for="firstNameInput" class="form-label">First name</label>
+                        <input type="text" class="form-control form-control-background-color" id="firstNameInput" placeholder="Enter fist name">
+                    </div>
+                    <div class="mb-2">
+                        <label for="lastNameInput" class="form-label">Last name</label>
+                        <input type="text" class="form-control form-control-background-color" id="lastNameInput" placeholder="Enter last name">
+                    </div>
+                    <div class="mb-2">
+                        <label for="phoneNumberInput" class="form-label">Phone number</label>
+                        <input type="text" class="form-control form-control-background-color" id="phoneNumberInput" placeholder="Enter phone number">
+                    </div>
+                    <div class="mb-2">
+                        <label for="emailInput" class="form-label">Email address</label>
+                        <input type="email" class="form-control form-control-background-color" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-2">
+                        <label for="dateOfBirthInput" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control form-control-background-color" id="dateOfBirthInput">
+                    </div>
+                    <div class="mb-2">
+                        <label for="memberSinceInput" class="form-label">Member since</label>
+                        <input type="date" class="form-control form-control-background-color" id="memberSinceInput">
+                    </div>
+                    <div class="mb-2">
+                        <label for="businessInput" class="form-label">Business</label>
+                        <select class="form-control form-control-background-color">
+                            <option disabled>-- select business --</option>
+                            <option selected>Retail stores</option>
+                            <option>Dealerships</option>
+                            <option>Online shopping</option>
+                            <option>Distribution</option>
+                            <option>Repair shops</option>
+                            <option>Customer support</option>
+                        </select>
+                    </div>
+                    <div class="mb-2">
+                        <label for="profilePhotoFilePathInput" class="form-label">Select profile photo</label>
+                        <input type="file" class="form-control form-control-background-color" id="profilePhotoFilePathInput">
+                    </div>
+                    <div class="mb-2">
+                        <label for="introductionInput" class="form-label">Introduction</label>
+                        <textarea class="form-control form-control-background-color" id="introductionInput" rows="4" placeholder="Introduce yourself"></textarea>
+                    </div>
+                </div>
+            </div>  
+            <hr class="separator">
+            <div class="button-group">
+                <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/profile/details']">Back</button>
+                <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/profile/details']">Save</button>
+            </div>
+        </form>
+    </div>
+</div>

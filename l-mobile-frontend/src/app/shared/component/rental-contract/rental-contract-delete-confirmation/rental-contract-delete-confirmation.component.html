@@ -1,0 +1,17 @@
+<div class="custom-details-card custom-modal-content">
+    <div class="custom-details-card-header">
+        Delete confirmation
+    </div>
+    <div class="custom-details-card-description-n-details" style="padding-left: 12px;">
+        <div class="custom-details-card-description-container">
+            <div class="custom-details-card-description">
+                Would you like to remove contract <span style="font-weight: 500;">Bosch CSB 550 RE for Rent</span> with id {{ id }} ?
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" (click)="closeModal('not deleted')">Close</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="closeModal('deleted')" [routerLink]="['/control-panel/rental-contract/list']">Delete</button>
+    </div>
+</div>

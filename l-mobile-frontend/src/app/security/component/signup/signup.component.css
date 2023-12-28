@@ -1,0 +1,7 @@
+.success-message {
+  background-color: lightblue;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 12%;
+}

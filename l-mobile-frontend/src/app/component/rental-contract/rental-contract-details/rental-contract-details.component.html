@@ -1,0 +1,39 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 720px;">
+    <div class="custom-details-card-header">
+        Rental contract - {{rentalContract.reference}}
+    </div>
+    <div class="row">
+        <div class="col-sm-4 no-padding-right">
+            <div>
+            <div class="custom-details-card-image">
+                <img *ngFor="let p of rentalContract.rentalDevices" [src]="p.pictureFilePath"  class="img-fluid responsive-image">
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-8 no-padding-left">
+            <div class="custom-details-card-description-n-details">
+                <div class="custom-details-card-description-container">
+                    <div class="custom-details-card-description">
+
+                    </div>
+                </div>
+                <div class="custom-details-card-details">
+                    <!-- <div><span class="detail-field-name">Reference:&nbsp;</span>MS-8457</div> -->
+                    <div><span class="detail-field-name">vendeur:&nbsp;</span>{{rentalContract.salesman.firstName +' '+rentalContract.salesman.lastName}}</div>
+                    <div><span class="detail-field-name">rent price:&nbsp;</span>{{rentalContract.price}}</div>
+
+                    <div><span class="detail-field-name">Valid From:&nbsp;</span>{{rentalContract.validFrom  | date:'short'}}</div>
+                    <div><span class="detail-field-name">Valid To:&nbsp;</span>{{rentalContract.validTo  | date:'short'}}</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/rental-contract/list']">Back</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/rental-contract/edit']">Edit</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="openModal('rental-contract-001')">Delete</button>
+    </div>
+</div>

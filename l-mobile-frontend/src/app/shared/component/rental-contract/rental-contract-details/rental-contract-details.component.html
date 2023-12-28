@@ -1,0 +1,49 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 720px;">
+    <div class="custom-details-card-header">
+        Rental contract - MS-8457
+    </div>
+    <div class="row">
+        <div class="col-sm-4 no-padding-right">
+            <div>
+            <div class="custom-details-card-image">
+                <img src="assets/images/device/bosch_jigsaw.jpg" class="img-fluid responsive-image">
+                <img src="assets/images/device/forklift.png" class="img-fluid responsive-image">
+            </div>
+            </div>
+        </div>
+        <div class="col-sm-8 no-padding-left">
+            <div class="custom-details-card-description-n-details">
+                <div class="custom-details-card-description-container">
+                    <div class="custom-details-card-description">
+                        We are offering for rent our performant Bosch professional jigsaw which can be used across a wide range of tasks,
+                        as well as a powerful Toyota forklift.
+                    </div>
+                </div>
+                <div class="custom-details-card-details">
+                    <!-- <div><span class="detail-field-name">Reference:&nbsp;</span>MS-8457</div> -->
+                    <div><span class="detail-field-name">reference:&nbsp;</span>MS-154887</div>
+                    <div><span class="detail-field-name">rent period:&nbsp;</span>15/07/2023 to 15/09/2023</div>
+                    <div><span class="detail-field-name">rent price:&nbsp;</span>$175 per month</div>
+                    <div><span class="detail-field-name">payed amount:&nbsp;</span>$300</div>
+                    <div><span class="detail-field-name">devices:&nbsp;</span>Jigsaw, Forklift</div>
+                    <div><span class="detail-field-name">owner name:&nbsp;</span>Mohamed Samaali</div>
+                    <div><span class="detail-field-name">owner phone:&nbsp;</span>99 888 777</div>
+                    <div><span class="detail-field-name">partner name:&nbsp;</span>Dalel Mbarki</div>
+                    <div><span class="detail-field-name">partner phone:&nbsp;</span>99 666 555</div>
+                    <div><span class="detail-field-name">signed by owner at:&nbsp;</span>05/07/2023</div>
+                    <div><span class="detail-field-name">signed by partner at:&nbsp;</span>03/07/2023</div>
+                    <div><span class="detail-field-name">created at:&nbsp;</span>01/07/2023</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/rental-contract/list']">Back</button>
+        <button type="button" class="btn btn-outline-warning btn-sm" [routerLink]="['/control-panel/rental-device/list']">Devices (*)</button>
+        <button type="button" class="btn btn-outline-warning btn-sm" [routerLink]="['/control-panel/profile/details']">Owner (*)</button>
+        <button type="button" class="btn btn-outline-warning btn-sm" [routerLink]="['/control-panel/profile/details']">Partner (*)</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/rental-contract/edit']">Edit</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="openModal('rental-contract-001')">Delete</button>
+    </div>
+</div>

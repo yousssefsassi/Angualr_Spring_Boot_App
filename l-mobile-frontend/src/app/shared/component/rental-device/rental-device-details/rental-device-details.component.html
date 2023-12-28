@@ -1,0 +1,38 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 720px;">
+    <div class="custom-details-card-header">
+        Bosch CSB 550 RE
+    </div>
+    <div class="row">
+        <div class="col-sm-5 no-padding-right">
+            <div class="custom-details-card-image">
+                <img src="assets/images/device/bosch_csb_550re_hammer_drill.jpeg" class="img-fluid responsive-image">
+            </div>
+        </div>
+        <div class="col-sm-7 no-padding-left">
+            <div class="custom-details-card-description-n-details">
+                <div class="custom-details-card-description-container">
+                    <div class="custom-details-card-description">
+                        The Bosch CSB 550 RE 1-9/16-Inch SDS-max Combination Hammer delivers 6.1 ft.-lbs.
+                        of impact energy for maximum productivity in all-day drilling and chiseling applications.
+                        <!-- Bosch professional jigsaw that can be used across a wide range of tasks,
+                        it comes with speed control options and a fast moving blade. -->
+                    </div>
+                </div>
+                <div class="custom-details-card-details">
+                    <div><span class="detail-field-name">rent price:&nbsp;</span>$175</div>
+                    <div><span class="detail-field-name">rent period:&nbsp;</span>one month</div>
+                    <div><span class="detail-field-name">brand:&nbsp;</span>Bosch</div>
+                    <div><span class="detail-field-name">serial number:&nbsp;</span>HS-216501984</div>
+                    <div><span class="detail-field-name">year of manufactor:&nbsp;</span>2019</div>
+                    <div><span class="detail-field-name">purchase price:&nbsp;</span>$1845</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/rental-device/list']">Back</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/rental-device/edit']">Edit</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="openModal('rental-device-001')">Delete</button>
+    </div>
+</div>

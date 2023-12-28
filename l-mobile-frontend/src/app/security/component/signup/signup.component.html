@@ -1,0 +1,123 @@
+<div class="container-to-center-horizontally" style=" margin-top: 32px;">
+    <div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 920px;">
+        <div class="custom-details-card-header">
+            Join us
+        </div>
+        <div>
+            <form>
+                <div class="row" style="margin: 8px;">
+                    <div class="col-sm no-padding-left">
+                        <div class="custom-details-card-image" style="padding: 0; margin-bottom: 16px;">
+                            <img src="assets/images/static_pages/sign_up.jpg" class="img-fluid responsive-image">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="mb-2">
+                            <label for="firstNameInput" class="form-label">First name</label>
+                            <input type="text" class="form-control form-control-background-color" id="firstNameInput" placeholder="Enter first name" name="firstName" [(ngModel)]="registrationInfo.firstName">
+                        </div>
+                        <div class="mb-2">
+                            <label for="lastNameInput" class="form-label">Last name</label>
+                            <input type="text" class="form-control form-control-background-color" id="lastNameInput" placeholder="Enter last name" name="lastName" [(ngModel)]="registrationInfo.lastName">
+                        </div>
+                        <div class="mb-2">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-background-color" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" name="email" [(ngModel)]="registrationInfo.email">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="mb-2">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-background-color" id="passwordInput" placeholder="Enter password" name="password" [(ngModel)]="registrationInfo.password">
+                        </div>
+                        <div class="mb-2">
+                            <label for="confirmPasswordInput" class="form-label">Confirm password</label>
+                            <input type="password" class="form-control form-control-background-color" id="confirmPasswordInput" placeholder="Enter password">
+                        </div>
+                        <!-- <div class="mb-2">
+                            <label for="accountTypeInput" class="form-label">Account Type</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="roleRadioBtnGrp" id="salesmanRole" checked [value]="userRoleNameList[1]" (change)="onSelectAccountType($event)">
+                                <label class="form-check-label" for="salesmanRole">
+                                Salesman
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="roleRadioBtnGrp" id="adminRole" [value]="userRoleNameList[0]" (change)="onSelectAccountType($event)">
+                                <label class="form-check-label" for="adminRole">
+                                Admin
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary mt-2" (click)="onSignUp()">Create account</button>
+                    <a href="javascript: void(0);" class="link-primary" style="margin: 6px;" [routerLink]="['']">already have one</a>
+                </div>
+                <div class="success-message" *ngIf="showRegistrationMessage">
+                  <p>{{ registrationMessage }}</p>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--
+<div class="row" style="margin-top: 100px;">
+    <div class="col-lg"></div>
+    <div class="col-lg">
+        <div style="padding: 24px; border: 1px solid lightgray; border-radius: 8px;">
+            <div
+            class="card-title-color"
+            style="margin: auto;
+            width: max-content;
+            transform: translateY(-45px);
+            font-size: 26px;
+            background-color: white;">
+                Join us
+            </div>
+            <form>
+                <div class="mb-2">
+                    <label for="firstNameInput" class="form-label">First name</label>
+                    <input type="text" class="form-control form-control-background-color" id="firstNameInput" placeholder="Enter first name" name="firstName" [(ngModel)]="registrationInfo.firstName">
+                </div>
+                <div class="mb-2">
+                    <label for="lastNameInput" class="form-label">Last name</label>
+                    <input type="text" class="form-control form-control-background-color" id="lastNameInput" placeholder="Enter last name" name="lastName" [(ngModel)]="registrationInfo.lastName">
+                </div>
+                <div class="mb-2">
+                    <label for="emailInput" class="form-label">Email address</label>
+                    <input type="email" class="form-control form-control-background-color" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" name="email" [(ngModel)]="registrationInfo.email">
+                </div>
+                <div class="mb-2">
+                    <label for="passwordInput" class="form-label">Password</label>
+                    <input type="password" class="form-control form-control-background-color" id="passwordInput" placeholder="Enter password" name="password" [(ngModel)]="registrationInfo.password">
+                </div>
+                <div class="mb-2">
+                    <label for="accountTypeInput" class="form-label">Account Type</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="roleRadioBtnGrp" id="salesmanRole" checked [value]="userRoleNameList[1]" (change)="onSelectAccountType($event)">
+                        <label class="form-check-label" for="salesmanRole">
+                        Salesman
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="roleRadioBtnGrp" id="adminRole" [value]="userRoleNameList[0]" (change)="onSelectAccountType($event)">
+                        <label class="form-check-label" for="adminRole">
+                        Admin
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-2" (click)="onSignUp()">Create account</button>
+                <div style="width: fit-content; margin-left: auto;"><a href="javascript: void(0);" class="link-primary" [routerLink]="['/login']">already have one</a></div>
+            </form>
+        </div>
+    </div>
+    <div class="col-lg"></div>
+</div>
+-->

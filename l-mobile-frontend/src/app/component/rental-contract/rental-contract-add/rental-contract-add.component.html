@@ -1,0 +1,59 @@
+
+
+
+<div class="custom-details-card scale-with-shadow-on-hover">
+    <div class="custom-details-card-header">
+        Register new rental contract
+    </div>
+    <div>
+        <form  [formGroup]="formAddContract">
+            <div class="row" style="margin: 8px;">
+                <div class="col-sm">
+                    <!-- <div class="mb-2"> -->
+
+
+                      <div class="mb-2">
+                        <label for="yearOfManufactureInput" class="form-label">reference</label>
+                        <input type="text" formControlName="reference" class="form-control form-control-background-color" id="yearOfManufactureInput">
+                    </div>
+                    <div class="mb-2">
+                      <label for="yearOfManufactureInput" class="form-label">price</label>
+                      <input type="text" formControlName="price" class="form-control form-control-background-color" id="yearOfManufactureInput">
+                  </div>
+                    <div class="mb-2">
+                        <label for="yearOfManufactureInput" class="form-label">valid From</label>
+                        <input type="date" formControlName="validFrom" class="form-control form-control-background-color" id="yearOfManufactureInput">
+                    </div>
+                    <div class="mb-2">
+                      <label for="yearOfManufactureInput" class="form-label">Valid To</label>
+                      <input formControlName="validTo" type="date" class="form-control form-control-background-color" id="yearOfManufactureInput">
+                  </div>
+                </div>
+                <div class="col-sm">
+
+                    <!-- <div class="mb-2">
+                        <label for="descriptionInput" class="form-label">Description</label>
+                        <textarea class="form-control form-control-background-color" id="descriptionInput" rows="4" placeholder="Enter device description"></textarea>
+                    </div> -->
+                    <div class="mb-2">
+                      <label for="descriptionInput" class="form-label">Rental Device</label>
+                      <br>
+                      <select formControlName="rentalDevices"  multiple>
+
+                        <option *ngFor="let device of deviceList" [value]="device">{{device.brand}}</option>
+
+                      </select>
+                    </div>
+                </div>
+            </div>
+            <hr class="separator">
+            <div class="button-group">
+                <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/rental-contract/list']">Back</button>
+                <button type="button" class="btn btn-outline-success btn-sm" (click)="addContract()">Add</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

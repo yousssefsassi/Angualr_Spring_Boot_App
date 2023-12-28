@@ -1,0 +1,65 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 920px;">
+    <div class="custom-details-card-header">
+        Update trade-in information
+    </div>
+    <div>
+        <form>
+            <div class="row" style="margin: 8px;">
+                <div class="col-sm no-padding-left">
+                    <div class="custom-details-card-image" style="padding: 0; margin-bottom: 16px;">
+                        <img src="assets/images/device/bosch_csb_550re_hammer_drill.jpeg" class="img-fluid responsive-image">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-2">
+                        <label for="nameInput" class="form-label">Name</label>
+                        <input type="text" class="form-control form-control-background-color" id="nameInput" placeholder="Enter device name">
+                    </div>
+                    <div class="mb-2">
+                        <label for="modelInput" class="form-label">Model</label>
+                        <input type="text" class="form-control form-control-background-color" id="modelInput" placeholder="Enter device model">
+                    </div>
+                    <div class="mb-2">
+                        <label for="modelInput" class="form-label">Brand</label>
+                        <input type="text" class="form-control form-control-background-color" id="modelInput" placeholder="Enter device brand">
+                    </div>
+                    <div class="mb-2">
+                        <label for="serialNumberInput" class="form-label">Serial number</label>
+                        <input type="text" class="form-control form-control-background-color" id="serialNumberInput" placeholder="Enter device serial number">
+                    </div>
+                    <div class="mb-2">
+                        <label for="yearOfManufactureInput" class="form-label">Year of manufactor</label>
+                        <input type="date" class="form-control form-control-background-color" id="yearOfManufactureInput">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="mb-2">
+                        <label for="rentPriceInput" class="form-label">Rent price</label>
+                        <input type="number" class="form-control form-control-background-color" id="rentPriceInput" placeholder="Enter rent price">
+                    </div>
+                    <div class="mb-2">
+                        <label for="rentPeriodInput" class="form-label">Rent period</label>
+                        <input type="text" class="form-control form-control-background-color" id="rentPeriodInput" placeholder="Enter rent period">
+                    </div>
+                    <div class="mb-2">
+                        <label for="purchasePriceInput" class="form-label">Purchase price</label>
+                        <input type="number" class="form-control form-control-background-color" id="purchasePriceInput" placeholder="Enter purchase price">
+                    </div>
+                    <div class="mb-2">
+                        <label for="devicePhotoFilePathInput" class="form-label">Select device picture</label>
+                        <input type="file" class="form-control form-control-background-color" id="devicePhotoFilePathInput">
+                    </div>
+                    <div class="mb-2">
+                        <label for="descriptionInput" class="form-label">Description</label>
+                        <textarea class="form-control form-control-background-color" id="descriptionInput" rows="4" placeholder="Enter device description"></textarea>
+                    </div>
+                </div>
+            </div>  
+            <hr class="separator">
+            <div class="button-group">
+                <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/tradein-contract/details']">Back</button>
+                <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/tradein-contract/details']">Save</button>
+            </div>
+        </form>
+    </div>
+</div>

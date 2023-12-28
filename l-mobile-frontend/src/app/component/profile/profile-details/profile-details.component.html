@@ -1,0 +1,38 @@
+<div class="custom-details-card scale-with-shadow-on-hover" style="max-width: 720px;">
+    <div class="custom-details-card-header">
+        Ahmed Mbarki
+    </div>
+    <div class="row">
+        <div class="col-sm-5 no-padding-right">
+            <div class="custom-details-card-image">
+                <img src="assets/images/profile/salesman_01.jpg" class="img-fluid responsive-image">
+            </div>
+        </div>
+        <div class="col-sm-7 no-padding-left">
+            <div class="custom-details-card-description-n-details">
+                <div class="custom-details-card-description-container">
+                    <div class="custom-details-card-description">
+                        Exceptional knowledge of car parts and accessories, coupled with excellent communication and negotiation skills.
+                    </div>
+                </div>
+                <div class="custom-details-card-details">
+                    <div><span class="detail-field-name">phone:&nbsp;</span>99 254 625</div>
+                    <div><span class="detail-field-name">email:&nbsp;</span>ahmed.mbarki@gmail.com</div>
+                    <div><span class="detail-field-name">date of birth:&nbsp;</span>1992/11/19</div>
+                    <div><span class="detail-field-name">business:&nbsp;</span>retail stores</div>
+                    <div><span class="detail-field-name">member since:&nbsp;</span>10/05/2019</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="separator">
+    <div class="button-group">
+        <button type="button" class="btn btn-outline-secondary btn-sm" [routerLink]="['/control-panel/profile/list']">Back</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/profile/edit']">Edit</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/profile/login/edit']">Change login</button>
+        <button type="button" class="btn btn-outline-primary btn-sm" [routerLink]="['/control-panel/profile/password/edit']">Change password</button>
+        <button type="button" class="btn btn-outline-success btn-sm" (click)="openProfileStatusChangeModal('profile-001')">Enable</button>
+        <button type="button" class="btn btn-outline-info btn-sm" (click)="openProfileStatusChangeModal('profile-001')">Disable</button>
+        <button type="button" class="btn btn-outline-danger btn-sm" (click)="openProfileDeleteModal('profile-001')">Delete</button>
+    </div>
+</div>

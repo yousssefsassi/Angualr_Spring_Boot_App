@@ -1,0 +1,28 @@
+server:
+  port: 8088
+  servlet:
+    context-path: /lmobile/api
+
+
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/lmobiledb
+    username: postgres
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    generate-ddl: true
+    open-in-view: true
+    hibernate:
+      ddl-auto: update #create-drop #update #none
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+#logging:
+#  level:
+#    root: INFO
+#    org.springframework.web: DEBUG
+#    com.howtodoinjava: DEBUG
+#    org.hibernate: ERROR

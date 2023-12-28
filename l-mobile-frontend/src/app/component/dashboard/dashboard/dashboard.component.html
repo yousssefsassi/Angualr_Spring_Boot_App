@@ -1,0 +1,39 @@
+<!-- <div style="background-color: rgb(232, 232, 255);">
+    <div style="max-width: 800px; padding: 16px 0;">
+        <div class="row">
+            <div class="col-md-1">
+                <div style="width: 50px; height: 50px; margin: 0 16px; background-color: white; overflow: hidden; position: relative;">
+                    <img src="assets/images/icons/vertical_menu/dashboard.svg" style="width: 40px;position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"alt="dashboard">
+                </div>
+            </div>
+            <div class="col-md">
+                <div style="margin: 0 16px;">
+                    <div style="font-size: 20px;">Analytics Dashboard</div>
+                    <div style="color: gray;">here you can find other's devices for rent and also rent your own devices</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="padding: 16px;">
+    <app-chart></app-chart>
+    <app-chart></app-chart>
+    <app-chart></app-chart>
+    <app-chart></app-chart>
+</div> -->
+
+<div class="col-xl-5" >
+  <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height: '360px'}"></canvasjs-chart>
+  </div>
+
+
+<div class="col-xl-5" style="margin-left: 619px;margin-top: -354px;">
+  <canvasjs-chart [options]="chartOptions1" [styles]="{width: '100%', height: '360px'}"></canvasjs-chart>
+</div>
+
+<br>
+
+<div class="col-xl-5" style="margin-left: 300px;" >
+  <canvasjs-chart [options]="chartOptions2" [styles]="{width: '100%', height: '360px'}"></canvasjs-chart>
+</div>
+

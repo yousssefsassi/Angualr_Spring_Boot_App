@@ -1,0 +1,38 @@
+<div class="container-to-center-horizontally" style=" margin-top: 32px;">
+    <div class="custom-details-card scale-with-shadow-on-hover">
+        <div class="custom-details-card-header">
+            Welcome back
+        </div>
+        <div>
+            <form>
+                <div class="row" style="margin: 8px;">
+                    <div class="col-sm no-padding-left">
+                        <div class="custom-details-card-image" style="padding: 0; margin-bottom: 16px;">
+                            <img src="assets/images/static_pages/log_in.jpg" class="img-fluid responsive-image">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="mb-2">
+                            <label for="emailInput" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-background-color" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email" name="email" [(ngModel)]="credentials.email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="passwordInput" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-background-color" id="passwordInput" placeholder="Enter password" name="password" [(ngModel)]="credentials.password">
+                        </div>
+                    </div>
+                </div>
+                <hr class="separator">
+                <div class="button-group">
+                    <button type="submit" class="btn btn-primary btn-sm mt-2" (click)="onLogin()">Login</button>
+                    <a href="javascript: void(0);" class="link-primary" style="margin: 0 6px;" [routerLink]="['/signup']">create account</a>
+                </div>
+            </form>
+            <div class="success-message" *ngIf="showLoginMessage">
+              <p>{{ loginMessage }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
