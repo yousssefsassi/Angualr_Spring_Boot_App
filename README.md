@@ -1,1 +1,1 @@
-this is a full-stack application using Angular and Spring Boot
+This is a full-stack sales application using Angular and Spring Boot
